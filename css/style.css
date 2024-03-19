@@ -3,8 +3,13 @@
     padding: 0%;
     margin: 0%;
     font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
     font-optical-sizing: auto;
     font-size: 20px;
+}
+:root{
+    --margin-left-desktop: 10dvw;
+    --margin-right-desktop: 10dvw;
 }
 nav{
     height: 80px;
@@ -25,12 +30,19 @@ nav ul{
 nav ul li{
     margin: 0px 30px;
 }
+nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+p span#chart{
+    font-size: 30px;
+}
 .simple-intro{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 20dvh;
-    margin-left: 10dvw;
-    margin-right: 10dvw;
+    margin-left: var(--margin-left-desktop);
+    margin-right: var(--margin-right-desktop);
     align-content: center;
 }
 
@@ -53,3 +65,111 @@ nav ul li{
 #picture img{
     border-radius: 8%;
 }
+section#projects{
+    height: 100dvh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-top: 20dvh;
+    margin-left: var(--margin-left-desktop);
+    margin-right: var(--margin-right-desktop);
+}
+section#projects div{
+    background-color: aquamarine;
+    border-radius: 1%;
+}
+div#proj_1{
+    grid-row: 1/4;
+    grid-column: 2;
+}
+div#proj_2{
+    grid-row: 1/6;
+    grid-column: 3;
+}
+div#proj_3{
+    grid-column: 2;
+    grid-row: 4/6;
+}
+
+section#tech_skills{
+    display: grid;
+    height: 100dvh;
+    margin-left: var(--margin-left-desktop);
+    margin-right: var(--margin-right-desktop);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+section#tech_skills p{
+    font-size: 40px;
+    grid-column: 1/6;
+    grid-row: 1;
+    text-align: center;
+    padding-top: 70px;
+}
+section#tech_skills div{
+    background-color: aqua;
+    border-radius: 1%;
+}
+section#tech_skills div.skill_1{
+    grid-row: 2;
+    grid-column: 2;
+}
+section#tech_skills div.skill_2{
+    grid-row: 2;
+    grid-column: 3;
+}
+section#tech_skills div.skill_3{
+    grid-row: 2;
+    grid-column: 4;
+}
+
+section#tech_skills div.skill_4{
+    grid-row: 3;
+    grid-column: 2;
+}
+section#tech_skills div.skill_5{
+    grid-row: 3;
+    grid-column: 3;
+}
+section#tech_skills div.skill_6{
+    grid-row: 3;
+    grid-column: 4;
+}
+section#profissional_experience{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100dvh;
+    margin-left: var(--margin-left-desktop);
+    margin-right: var(--margin-right-desktop);
+}
+p#prof_ex_head{
+    font-size: 40px;
+    grid-row: 1;
+    text-align: center;
+    grid-column: 1/end;
+}
+section#profissional_experience div{
+    background-color: cadetblue;
+    border-radius: 1%;
+    width: 100%;
+    grid-row: 2/6;
+    grid-column: 1/5;
+}
+section#contact{
+    display: grid;
+    height: 60dvh;
+    margin-right: var(--margin-right-desktop);
+    margin-left: var(--margin-left-desktop);
+}
+footer{
+    display: grid;
+    height: 20dvh;
+    margin-top: 10px;
+    border-top: 1px solid #85858598;
+    padding-left: var(--margin-left-desktop);
+    padding-right: var(--margin-right-desktop);
+}
+
