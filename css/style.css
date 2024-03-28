@@ -106,11 +106,27 @@ section#tech_skills p{
     grid-column: 1/6;
     grid-row: 1;
     text-align: center;
-    padding-top: 70px;
+}
+
+section#tech_skills div{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+section#tech_skills div p{
+    font-size: 30px;
+}
+section#tech_skills div :not(p){
+    font-size: 70px;
 }
 section#tech_skills div{
-    background-color: aqua;
+    border: 1px solid #85858598;
+    background-color: #ffffffa6;
     border-radius: 1%;
+    
 }
 section#tech_skills div.skill_1{
     grid-row: 2;
