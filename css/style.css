@@ -3,7 +3,6 @@
     padding: 0%;
     margin: 0%;
     font-family: "Roboto Slab", sans-serif;
-    font-weight: bold;
     font-optical-sizing: auto;
     font-size: 20px;
 }
@@ -98,7 +97,7 @@ section#tech_skills{
     margin-left: var(--margin-left-desktop);
     margin-right: var(--margin-right-desktop);
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 10px;
 }
 section#tech_skills p{
@@ -190,3 +189,46 @@ footer{
     padding-right: var(--margin-right-desktop);
 }
 
+section#profissional_experience div > div.float-card{
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+div.float-card p.period{
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+div.float-card p.employee {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 5px 0px;
+}
+
+div.float-card p.job-role{
+    font-size: 20px;
+    padding: 5px 0px;
+}
+div.float-card p.job-expecific{
+    font-size: 20px;
+    padding-top: 10px;
+}
+div.float-card p.job-skills{
+    padding-top: 10px;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+div.float-card ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    column-gap: 10px;
+}
+div.float-card ul li{
+    border-radius: 10%;
+    font-size: 20px;
+}
